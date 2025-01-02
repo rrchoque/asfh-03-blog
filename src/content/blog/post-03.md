@@ -3,7 +3,7 @@ title: Comprendiendo los Hooks de React
 date: 2023-06-15
 description: Learn how to use React Hooks to manage state and lifecycle in functional components.
 author: Alice Johnson
-image: '/assets/images/post-03.png'
+image: "images/post-03.png"
 tags: [React, JavaScript, Web Development]
 ---
 
@@ -16,7 +16,7 @@ Los Hooks de React son una característica que te permite usar el estado y otras
 El `useState` hook te permite añadir estado a tus componentes funcionales.
 
 ```javascript
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -35,7 +35,7 @@ function Counter() {
 El `useEffect` hook te permite realizar efectos secundarios en tus componentes funcionales, como acceder a datos externos o modificar el DOM.
 
 ```javascript
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
@@ -58,7 +58,7 @@ function Example() {
 Puedes crear tus propios hooks personalizados para reutilizar lógica en tus componentes.
 
 ```javascript
-import { useState } from 'react';
+import { useState } from "react";
 
 function useCounter(initialCount) {
   const [count, setCount] = useState(initialCount);
@@ -74,8 +74,8 @@ function useCounter(initialCount) {
 Luego puedes usar tu hook personalizado en tus componentes.
 
 ```javascript
-import React from 'react';
-import useCounter from './useCounter';
+import React from "react";
+import useCounter from "./useCounter";
 
 function Counter() {
   const { count, increment } = useCounter(0);
