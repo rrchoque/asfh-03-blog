@@ -5,6 +5,7 @@ description: Aprende a utilizar CSS Grid Layout para crear diseños complejos de
 author: jane-doe
 image: "images/post-05.png"
 tags: [CSS, Web Design, Frontend]
+isDraft: true
 ---
 
 # CSS Grid Layout: Una guía completa

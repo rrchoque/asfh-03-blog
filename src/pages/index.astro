@@ -4,7 +4,10 @@ import Layout from "../layouts/Layout.astro";
 import { siteConfig } from "src/config/site-config";
 import TypedBlogPost from "src/components/TypedBlogPost.astro";
 
-const blogPosts = await getCollection("blog");
+const blogPosts = await getCollection(
+  "blog",
+  (post) => post.data.isDraft !== true
+);
 ---
 
 <Layout>
