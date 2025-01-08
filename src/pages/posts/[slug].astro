@@ -11,13 +11,6 @@ export const getStaticPaths = (async () => {
     params: { slug: post.slug },
     props: { post: post },
   }));
-
-  // return [
-  //   {
-  //     params: { slug: 'post-01' },
-  //     props: { title: 'Primer Post' }, // {  post: post }
-  //   },
-  // ];
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
