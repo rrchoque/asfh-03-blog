@@ -13,6 +13,12 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/tailwind": "^5.1.4",
     "astro": "^5.1.1",
-    "tailwindcss": "^3.4.17"
+    "markdown-it": "^14.1.0",
+    "tailwindcss": "^3.4.17",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/sanitize-html": "^2.13.0"
   }
 }
