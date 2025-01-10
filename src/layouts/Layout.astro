@@ -17,6 +17,13 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
 
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Reynaldo Blog"
+      href={new URL("rss.xml", Astro.site)}
+    />
+
     <ViewTransitions />
   </head>
   <body class="bg-gray-900">
